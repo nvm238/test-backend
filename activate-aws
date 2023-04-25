@@ -1,0 +1,4 @@
+# Usage: source ./activate-aws
+
+export AWS_PROFILE=innovattic-medicinfo
+export AWS_REGION=eu-central-1

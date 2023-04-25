@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "ActiveProfile",
+    "ParameterValue": "prod"
+  },
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "backuprestore"
+  },
+  {
+    "ParameterKey": "HostedZoneName",
+    "ParameterValue": "app.acc-medicinfo.nl."
+  },
+  {
+    "ParameterKey": "DomainName",
+    "ParameterValue": "api-backup-restore.app.acc-medicinfo.nl"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t4g.xlarge"
+  },
+  {
+    "ParameterKey": "CertificateArn",
+    "ParameterValue": "arn:aws:acm:eu-central-1:247669823539:certificate/6d17ce73-134f-423f-8047-0c99b1903bb9"
+  },
+  {
+    "ParameterKey": "EbAppName",
+    "ParameterValue": "backup-restore-server-app"
+  }
+]

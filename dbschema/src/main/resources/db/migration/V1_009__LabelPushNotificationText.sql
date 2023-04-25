@@ -1,0 +1,1 @@
+ALTER TABLE "label" ADD COLUMN "push_notification_text" TEXT;

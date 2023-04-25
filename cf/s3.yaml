@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  EnvironmentName:
+    Type: String
+Resources:
+  FileStorage:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Join [ '-', [ 'medicinfo', 'chat-image', !Ref EnvironmentName ] ]
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      # With bucket versioning, a deleted file is not permanently deleted, it's just marked as 'deleted'.
+      # This is a very simple solution to protect against accidental deletion, for example due to user error
+      # or bugs in our code. Together with high durability guarantees of s3 itself, this provides a
+      # reasonable 'backup strategy'.
+      # After 30 days, we permanently delete files.
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: PermanentDeleteRule
+            Status: Enabled
+            NoncurrentVersionExpirationInDays: 30

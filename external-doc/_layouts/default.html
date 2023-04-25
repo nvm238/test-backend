@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+        </style>
+    </head>
+    <body>
+        <header class="site-header" role="banner">
+            <div class="brandMark brandMark--dark"></div>
+            <div class="wrapper">
+                <img class="headerImg" src="https://medicinfo.nl/wp-content/uploads/2021/01/Medicinfo-2021-logo-onderregel-wit.svg" />
+            </div>
+        </header>
+        <main class="page-content" aria-label="Content">
+
+            <div class="wrapper">
+                <h1 class="page-heading">{{ page.title }}</h1>
+
+                {{ content }}
+            </div>
+        </main>
+        <footer>
+            <div class="brandMark brandMark--light"></div>
+            <div class="wrapper flex-between">
+                <div>
+                    <p class="brand small">{{ page.title }}</p>
+                    <p class="small">Latest update: {{ site.time }}</p>
+                </div>
+                <div>
+                    <p class="small"></p>
+                    <p class="small">Created by <a id="white" href="www.innovattic.com">Innovattic</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

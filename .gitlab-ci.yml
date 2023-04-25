@@ -1,0 +1,8 @@
+build:
+  stage: build
+  script:
+    - ./ci.sh
+  artifacts:
+    reports:
+      junit: "**/build/test-results/**/*.xml"
+    when: always

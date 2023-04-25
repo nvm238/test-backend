@@ -1,0 +1,169 @@
+---
+---
+// Start with Jekyll's minima theme css rules
+@import "minima";
+// Page content
+body {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+ }
+.page-content{
+    padding-bottom: 0px !important;
+}
+footer{
+    padding: 72px 0px;
+    margin-top: 72px;
+    background-color: #231f20;
+    color:#f5f5f5;
+    position: relative;
+}
+// Page header
+.page-heading{
+    font-size: 48px;
+    margin-top: 48px;
+}
+.site-header{
+    padding: 48px 0px;
+    background-color: #416982;
+    border:none;
+}
+.headerImg{
+    width:30%;
+}
+// Heading styles
+h1 {
+    font-size: 48px;
+    margin-top: 48px;
+}
+h2 {
+    font-size: 38px;
+    margin-top: 64px;
+}
+h3 {
+    font-size: 32px;
+    margin-top: 48px;
+}
+h4 {
+    font-size: 24px;
+    margin-top: 48px;
+}
+h5 {
+    font-size: 20px;
+    margin: 40px 0px 16px;
+    display: inline;
+    background-image: linear-gradient(#fff 60%, #E7E6E6 55%);
+}
+.brand::before{
+    content: 'I';
+    font-style: italic;
+    margin-right: 12px;
+}
+h2#version-history{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba($color: #000, $alpha: 0.5);
+    margin-bottom: 4px;
+}
+// Paragraph style
+p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+p.small{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+// Link styles
+a {
+    color:#416982;
+    display:inline-block;
+}
+a:hover{
+    color: #416982;
+    text-decoration: none;
+}
+a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #416982;
+    transition: width .2s ease-in-out;
+    position: relative;
+    top: 26px;
+}
+a:hover::before {
+    width: 100%;
+}
+a::after{
+    content: url(https://www.innovattic.com/wp-content/uploads/2021/10/external-link-16.svg);
+    vertical-align: text-top;
+    margin-left:4px;
+    filter: invert(39%) sepia(38%) saturate(473%) hue-rotate(159deg) brightness(89%) contrast(93%); // Gives .svg color #416982
+}
+    // Link styles in white
+    a#white{
+        color:white;
+    }
+    a#white::before {
+        background: #fff;
+    }
+    a#white::after{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); // Gives .svg color #FFFFFF
+    }
+// Code highlight styles
+.highlight{
+    background-color: #EBEFF1 !important;
+    margin: 16px 0px;
+    padding: 4px 16px;
+    border-radius: 6px;
+}
+code{
+    background-color: #EBEFF1;
+    color: #416982;
+    border: none;
+    font-size: 14px;
+}
+pre{
+    border:none;
+    padding: none;
+}
+span.s2{
+    color: #EB5F46 !important;
+}
+span.mi{
+    color: #8C9B64 !important;
+}
+// List styles
+ol{
+    margin-bottom: 48px;
+}
+li{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper::after{
+    content:none;
+}
+// Brand mark in header and footer
+.brandMark{
+    width:32px;
+    position: absolute;
+    height: calc(75%);
+    transform: skew(-15deg);
+    left: calc(10%);
+    bottom:0;
+}
+// Brand mark color variations
+.brandMark--light{
+    background-color: rgba($color: #fff, $alpha: 0.2);
+}
+.brandMark--dark{
+    background-color: rgba($color: #000, $alpha: 0.2);
+}

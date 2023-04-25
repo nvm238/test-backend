@@ -1,0 +1,3 @@
+# Place minified or otherwise garbled entries here to exclude them from "git grep"
+
+dbschema/src/generated/**                binary

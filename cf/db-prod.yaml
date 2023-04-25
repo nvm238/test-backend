@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  Password:
+    Type: String
+    NoEcho: true
+Resources:
+  Database:
+    Type: 'AWS::RDS::DBInstance'
+    Properties:
+      Engine: 'postgres'
+      EngineVersion: '12.7'
+      DBInstanceClass: 'db.t4g.medium'
+      DBInstanceIdentifier: 'medicinfo-prod'
+
+      StorageType: 'gp2'
+      StorageEncrypted: True
+      AllocatedStorage: 20
+      MaxAllocatedStorage: 500
+
+      MasterUsername: 'postgres'
+      MasterUserPassword: !Ref Password
+
+      BackupRetentionPeriod: 7
+      PreferredBackupWindow: '01:00-02:00'
+      AllowMajorVersionUpgrade: False
+      AutoMinorVersionUpgrade: True
+      PreferredMaintenanceWindow: 'sun:02:00-sun:04:00'
+
+      EnableCloudwatchLogsExports:
+        - 'postgresql'
+        - 'upgrade'
+
+      MultiAZ: True
+      EnablePerformanceInsights: True
+      DeletionProtection: True

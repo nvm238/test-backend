@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+build/
+/data
+
+# local dev-only application profiles
+application-*.local.properties
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# macOS
+.DS_Store

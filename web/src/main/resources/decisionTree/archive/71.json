@@ -1,0 +1,1873 @@
+{
+  "questionnaires" : [
+    {
+      "id" : "URINE",
+      "name" : "Urineklachten",
+      "questions" : [
+        {
+          "uniqueQuestionNumber" : "URINE1",
+          "questionCategory" : "Urineklachten",
+          "question" : "Heb je last van een of meer van de volgende klachten?",
+          "questionForCaregiver" : "Heeft de patiënt last van een of meer van de volgende klachten?",
+          "shortQuestionVpk" : "Urgente klachten",
+          "additionalInfo" : "Ernstig ziek: Bijvoorbeeld erg suf of slaperig, zeer hevig overgeven, minder/niet willen drinken en / of koorts (38°C of hoger)",
+          "pictureWithQuestion" : "",
+          "urgency" : "Red flag",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ondragelijke buikpijn bij de plasklachten",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Verward, suf of erg slaperig",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Verstopte urinekatheter",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Ernstig ziek",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Koude rillingen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Misselijkheid en overgeven",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 7,
+              "answerText" : "Koorts",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG7A"
+              }
+            },
+            {
+              "id" : 8,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG7A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "Bij voorkeur via de anus gemeten en afronden op halve graden.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SLIDER",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "35",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "35.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "36",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "36.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "37",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "37.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 7,
+              "answerText" : "38",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 8,
+              "answerText" : "38.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 9,
+              "answerText" : "39",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 10,
+              "answerText" : "39.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 11,
+              "answerText" : "40",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 12,
+              "answerText" : "40.5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "URINE2"
+              }
+            },
+            {
+              "id" : 13,
+              "answerText" : "41",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "URINE2"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE2",
+          "questionCategory" : "Urineklachten",
+          "question" : "Heb je last van een of meer van de volgende klachten naast de plasklachten?",
+          "questionForCaregiver" : "Heeft de patiënt last van een of meer van de volgende klachten naast de plasklachten?",
+          "shortQuestionVpk" : "Systemische verschijnselen",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Rug en/of pijn in de zij",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "PIJ1"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Pijn in de onderbuik",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "PIJ1"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Pijn, moeilijk te benoemen waar precies",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "PIJ1"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "PIJ1",
+          "questionCategory" : "PIJN",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "score 9 of 10",
+          "questionType" : "SLIDER",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 0,
+              "answerText" : "0",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 1,
+              "answerText" : "1",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "2",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "3",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "4",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "5",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "6",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 7,
+              "answerText" : "7",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 8,
+              "answerText" : "8",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 9,
+              "answerText" : "9",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "URINE3A"
+              }
+            },
+            {
+              "id" : 10,
+              "answerText" : "10",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 1,
+                "urgencyName" : "U1 - U2",
+                "actionText" : "URINE3A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE3A",
+          "questionCategory" : "Urineklachten",
+          "question" : "Is een van de volgende situaties op jou van toepassing?",
+          "questionForCaregiver" : "Is een van de volgende situaties op de patiënt van toepassing?",
+          "shortQuestionVpk" : "Complicerende factoren",
+          "additionalInfo" : "Buikwand katheter (Suprapubisch): een flexible slangetje, dat via een incisie via de buikwand, in de blaas is ingebracht. Blaaskatheter: een flexibel slangetje wat via de urineweg in de blaas is ingebracht",
+          "pictureWithQuestion" : "https://encyclopedie.medicinfo.nl/media/rxtjnbwq/urine3.jpg",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "SEX",
+              "operator" : "=",
+              "value" : "male"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Maakt gebruik van een blaaskatheter",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3B"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Maakt gebruik van een buikwand katheter",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE3B"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Een neurologische aandoening waardoor de blaasfunctie afwijkend is",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Bekend met een afwijking aan de nieren, blaas of urinewegen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Diabetes",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE3B",
+          "questionCategory" : "Urineklachten",
+          "question" : "Is een van de volgende situaties op jou van toepassing?",
+          "questionForCaregiver" : "Is een van de volgende situaties op de patiënt van toepassing?",
+          "shortQuestionVpk" : "Complicerende factoren",
+          "additionalInfo" : "Buikwand katheter (Suprapubisch): een flexible slangetje, dat via een incisie via de buikwand, in de blaas is ingebracht. Blaaskatheter: een flexibel slangetje wat via de urineweg in de blaas is ingebracht",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "SEX",
+              "operator" : "=",
+              "value" : "female"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Maakt gebruik van een blaaskatheter",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE4"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Maakt gebruik van een buikwand katheter",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE4"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Een neurologische aandoening waardoor de blaasfunctie afwijkend is",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Bekend met een afwijking aan de nieren, blaas of urinewegen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Diabetes",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE4",
+          "questionCategory" : "Urineklachten",
+          "question" : "Loopt de katheter niet meer goed door?",
+          "questionForCaregiver" : "Loopt de katheter niet meer goed door?",
+          "shortQuestionVpk" : "Verstopte katheter",
+          "additionalInfo" : "Bijvoorbeeld: lijkt het alsof hij verstopt is en loopt er geen urine in de slag of blijft de zak leeg?",
+          "pictureWithQuestion" : "",
+          "urgency" : "Red flag",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : false,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "ASK_FOR_CHAT",
+                "urgency" : 2,
+                "urgencyName" : "U2",
+                "actionText" : "ALG12A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG12A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "AGE",
+              "operator" : ">=",
+              "value" : "12"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12B"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG12B"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG12B",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "AGE",
+              "operator" : "<",
+              "value" : "12"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE5"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE5"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE5",
+          "questionCategory" : "Urineklachten",
+          "question" : "Heb je een of meer van deze klachten bij het plassen?",
+          "questionForCaregiver" : "Heeft de patiënt een of meer van deze klachten bij het plassen?",
+          "shortQuestionVpk" : "Plasklachten",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Pijn",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Erg vaak",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Kleine beetjes",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Loze aandrang",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Branderig gevoel",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Niet volledig uit kunnen plassen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 7,
+              "answerText" : "Sterk ruikend",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 8,
+              "answerText" : "Geen klachten bij het plassen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            },
+            {
+              "id" : 9,
+              "answerText" : "Mijn klachten staan hier niet genoemd",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE6"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE6",
+          "questionCategory" : "Urineklachten",
+          "question" : "Ziet de urine er anders uit?",
+          "questionForCaregiver" : "Ziet de urine er anders uit?",
+          "shortQuestionVpk" : "Aspect urine",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Bloed bij de urine of roodgekleurd",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE7"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Erg donker gekleurd",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE7"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Troebel",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE7"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Vlokken in de urine",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE7"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Nee, het ziet er normaal uit",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE7"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE7",
+          "questionCategory" : "Urineklachten",
+          "question" : "Heb je een of meer van de volgende klachten aan je geslachtsdelen?",
+          "questionForCaregiver" : "Heeft de patiënt een of meer van de volgende klachten aan de geslachtsdelen?",
+          "shortQuestionVpk" : "Klachten geslachtsdelen",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "SEX",
+              "operator" : "=",
+              "value" : "male"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Jeuk",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE8"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Abnormale afscheiding",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE8"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Pijn aan de bal / balzak",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE8"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "URINE8"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "URINE8",
+          "questionCategory" : "Urineklachten",
+          "question" : "Heb je een of meer van de volgende klachten aan je geslachtsdelen?",
+          "questionForCaregiver" : "Heeft de patiënt een of meer van de volgende klachten aan de geslachtsdelen?",
+          "shortQuestionVpk" : "Klachten geslachtsdelen",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "SEX",
+              "operator" : "=",
+              "value" : "female"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Jeuk",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG4"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Abnormale afscheiding",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG4"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Vaginale pijn",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG4"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Geen van allen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG4"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG4",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "[overnemen]",
+          "shortQuestionVpk" : "(mogelijk) zwanger",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "SEX",
+              "operator" : "=",
+              "value" : "female"
+            },
+            {
+              "name" : "AGE",
+              "operator" : ">",
+              "value" : "9"
+            },
+            {
+              "name" : "AGE",
+              "operator" : "<",
+              "value" : "61"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG19"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG19"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG19",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "AGE",
+              "operator" : ">",
+              "value" : "9"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG19A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG19A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "[Overnemen]",
+          "shortQuestionVpk" : "SOA getest",
+          "additionalInfo" : "Zo ja, wat was de uitslag en ben je behandeld? Er zijn meerdere antwoorden mogelijk.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "MULTI_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [
+            {
+              "name" : "AGE",
+              "operator" : ">",
+              "value" : "9"
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Gonorroe",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Chlamydia",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Syfilis",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Een andere SOA",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Wel getest, uitslag volgt",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Nee, niet getest",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 7,
+              "answerText" : "Al behandeld",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            },
+            {
+              "id" : 8,
+              "answerText" : "Niet behandeld",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG13",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Minder dan een uur",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Vandaag",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Gisteren",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Paar dagen",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            },
+            {
+              "id" : 5,
+              "answerText" : "Een week",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            },
+            {
+              "id" : 6,
+              "answerText" : "Langer dan een week",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG13A"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG13A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG14",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Bijkomende klachten",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG14A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG15"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG14A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Specificatie bijkomende klachten",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : false,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG15"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG15",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG17"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG17",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG5"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG5"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG5",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG6"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG3"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG6",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG3"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG3",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Medicatie en/of behandeling specialist",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG3A"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ADDITIONALQ"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG3A",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Specificatie medicatie/behandeling",
+          "additionalInfo" : "Graag zo uitgebreid / volledig mogelijk beschrijven.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : false,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ADDITIONALQ"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ADDITIONALQ",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "[overnemen]",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "ALG27"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "ALG27",
+          "questionCategory" : "Algemeen",
+          "question" : "[overnemen]",
+          "questionForCaregiver" : "[overnemen]",
+          "shortQuestionVpk" : "",
+          "additionalInfo" : "Dit is de laatste vraag, hierna worden je antwoorden doorgestuurd naar ons medisch team. Indien je geen aanvullingen hebt kan je op volgende klikken.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DESCRIPTIVE",
+          "questionRequired" : false,
+          "dontKnow" : true,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "FINISH",
+                "actionText" : "Einde triage"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "PRO",
+      "name" : "Gezondheidsprofiel",
+      "questions" : [
+        {
+          "uniqueQuestionNumber" : "PRO0",
+          "questionCategory" : "Profiel",
+          "question" : "Welkom",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "introductie",
+          "additionalInfo" : "Om je zo goed en snel mogelijk te kunnen helpen stellen we eerst een aantal vragen.\n\nDaarna kom je altijd in gesprek met ons medisch team via chat.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "INSTRUCTION",
+          "questionRequired" : false,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "PRO1"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "PRO1",
+          "questionCategory" : "Profiel",
+          "question" : "Betreft het jezelf of iemand anders?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Jezelf of een ander",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Mezelf",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "C-MEDAREA"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Iemand anders",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_AUTHORIZED"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_AUTHORIZED",
+          "questionCategory" : "Profiel",
+          "question" : "Heb je toestemming om de vraag namens de patiënt te stellen en is de patient aanwezig?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Toestemming ander persoon",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Ja",
+              "divergent" : true,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_RELATION"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Nee",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "UNAUTHORIZED",
+                "actionText" : "onbevoegd"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_RELATION",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is je relatie tot deze persoon?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Relatie ander persoon",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Partner",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_FIRSTNAME"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Kind",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_FIRSTNAME"
+              }
+            },
+            {
+              "id" : 3,
+              "answerText" : "Vriend / kennis",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_FIRSTNAME"
+              }
+            },
+            {
+              "id" : 4,
+              "answerText" : "Anders",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_FIRSTNAME"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_FIRSTNAME",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is de voornaam?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Voornaam ander persoon",
+          "additionalInfo" : "De volgende gegevens hebben we nodig i.v.m. declaratie van de zorg en de overdracht naar de eigen huisarts",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_LINE_DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_LASTNAME"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_LASTNAME",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is de achternaam?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Achternaam ander persoon",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_LINE_DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [
+            {
+              "name" : "LABEL",
+              "operator" : "in",
+              "value" : [
+                "noni",
+                "meddoh",
+                "meddj",
+                "meddwf"
+              ]
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_GENDER"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_GENDER",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is het geslacht?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Geslacht ander persoon",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "BOOLEAN",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Vrouw",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_BIRTHDATE"
+              }
+            },
+            {
+              "id" : 2,
+              "answerText" : "Man",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_BIRTHDATE"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_BIRTHDATE",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is de geboortedatum?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "Geboortedatum ander persoon",
+          "additionalInfo" : "",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "DATE",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "TRIAGEOTHER_BSN"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "TRIAGEOTHER_BSN",
+          "questionCategory" : "Profiel",
+          "question" : "Wat is het BSN?",
+          "questionForCaregiver" : "",
+          "shortQuestionVpk" : "BSN ander persoon",
+          "additionalInfo" : "Het burgerservicenummer (BSN) vind je achterop je identiteitsbewijs. Dit nummer is nodig t.b.v. declaratie van de geleverde zorg naar de eigen praktijk",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_LINE_DESCRIPTIVE",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [
+            {
+              "name" : "LABEL",
+              "operator" : "in",
+              "value" : [
+                "noni",
+                "meddoh",
+                "meddj",
+                "meddwf"
+              ]
+            }
+          ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTION",
+                "actionText" : "C-MEDAREA"
+              }
+            }
+          ]
+        },
+        {
+          "uniqueQuestionNumber" : "C-MEDAREA",
+          "questionCategory" : "Profiel",
+          "question" : "Wat voor klachten heb je?",
+          "questionForCaregiver" : "Wat voor klacht heeft de patiënt?",
+          "shortQuestionVpk" : "medical area",
+          "additionalInfo" : "Je kunt maar één klacht kiezen. Bij meerdere klachten: kies de klacht die het meest van toepassing is.",
+          "pictureWithQuestion" : "",
+          "urgency" : "",
+          "questionType" : "SINGLE_SELECTION",
+          "questionRequired" : true,
+          "dontKnow" : false,
+          "conditions" : [ ],
+          "answer" : [
+            {
+              "id" : 1,
+              "answerText" : "Urineklachten",
+              "divergent" : false,
+              "action" : {
+                "actionType" : "GO_TO_QUESTIONNAIRE",
+                "actionText" : "URINE"
+              },
+              "alternativeNames" : [
+                "Anticonceptiepil",
+                "vergeten",
+                "Anticonceptie",
+                "pil",
+                "pil vergeten",
+                "morning afterpil",
+                "zwanger",
+                "zwangerschap"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# These are Innovattic-specific overrides to the 'default' Detekt config,
+# which can be found here:
+# https://github.com/detekt/detekt/blob/main/detekt-core/src/main/resources/default-detekt-config.yml
+
+complexity:
+  active: false
+
+empty-blocks:
+  EmptyFunctionBlock:
+    active: true
+    ignoreOverridden: true
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: false
+  TooGenericExceptionThrown:
+    active: false
+
+formatting:
+  # This enabled ktlint's android mode. As of ktlint 0.36.0, this just sets
+  # max line length to 100, which we override anyways
+  android: true
+  MaximumLineLength:
+    active: true
+    maxLineLength: 140
+  NoWildcardImports:
+    active: false
+  Indentation:
+    active: false
+  ImportOrdering:
+    active: false
+
+naming:
+  VariableNaming:
+    # Allow underscores in Dagger projects. Denotes private, but public to allow injection
+    variablePattern: '(_)?[a-z][A-Za-z0-9]*'
+
+performance:
+  SpreadOperator:
+    active: false
+
+potential-bugs:
+  MapGetWithNotNullAssertionOperator:
+    active: true
+
+style:
+  ForbiddenComment:
+    # We don't consider 'TODO' as forbidden
+    values: 'STOPSHIP:'
+  FunctionOnlyReturningConstant:
+    active: false
+  LoopWithTooManyJumpStatements:
+    active: false
+  MagicNumber:
+    active: false
+  MaxLineLength:
+    maxLineLength: 140
+  MandatoryBracesIfStatements:
+    active: true
+  ReturnCount:
+    active: false
+  ThrowsCount:
+    active: false
+  UnnecessaryAbstractClass:
+    active: false
+  UtilityClassWithPublicConstructor:
+    active: false
