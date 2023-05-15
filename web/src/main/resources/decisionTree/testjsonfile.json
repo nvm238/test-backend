@@ -1,0 +1,3498 @@
+{
+    "questionnaires" : [
+        {
+    "id" : "PILVE",
+    "name" : "Anticonceptiepil vergeten",
+    "questions" : [
+      {
+        "uniqueQuestionNumber" : "ABCDE1A",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE1A_Question",
+        "questionForCaregiver" : "ABCDE1A_QuestionPar",
+        "shortQuestionVpk" : "Volledig bewustzijn",
+        "additionalInfo" : "ABCDE1A_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : ">=",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE1B"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE1B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE1B",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE1B_Question",
+        "questionForCaregiver" : "ABCDE1B_QuestionPar",
+        "shortQuestionVpk" : "Volledig bewustzijn kind",
+        "additionalInfo" : "ABCDE1B_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE2"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE2"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE2",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE2_Question",
+        "questionForCaregiver" : "ABCDE2_QuestionPar",
+        "shortQuestionVpk" : "A of B klachten",
+        "additionalInfo" : "ABCDE2_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE3"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE2_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE2_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE2_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE2_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE3",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE3_Question",
+        "questionForCaregiver" : "ABCDE3_QuestionPar",
+        "shortQuestionVpk" : "A of B klachten kind",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE4"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE3_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE3_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE3_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE3_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE4",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE4_Question",
+        "questionForCaregiver" : "ABCDE4_QuestionPar",
+        "shortQuestionVpk" : "C Klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE5"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE4_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE4_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE4_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE4_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE5",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE5_Question",
+        "questionForCaregiver" : "ABCDE5_QuestionPar",
+        "shortQuestionVpk" : "Acute verlamming",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE5_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE6"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE5_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE6"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE5_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE6"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE6",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE6_Question",
+        "questionForCaregiver" : "ABCDE6_QuestionPar",
+        "shortQuestionVpk" : "Mate van ziek zijn",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "PILVE1"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE6_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE6_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE6_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE6_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE1",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE1_Question",
+        "questionForCaregiver" : "PILVE1_QuestionPar",
+        "shortQuestionVpk" : "Welke OAC",
+        "additionalInfo" : "PILVE1_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "PILVE2"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "PILVE1_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "PILVE1_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "PILVE1_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "PILVE1_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE1A"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE1A",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE1A_Question",
+        "questionForCaregiver" : "PILVE1A_QuestionPar",
+        "shortQuestionVpk" : "Andere OAC",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE2",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE2_Question",
+        "questionForCaregiver" : "PILVE2_QuestionPar",
+        "shortQuestionVpk" : "Duur",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "PILVE2_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE3"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "PILVE2_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE3"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "PILVE2_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE3"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE3",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE3_Question",
+        "questionForCaregiver" : "PILVE3_QuestionPar",
+        "shortQuestionVpk" : "Hoeveel",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "PILVE3_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE4"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "PILVE3_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE4"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "PILVE3_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE4"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "PILVE3_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE4"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "PILVE3_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE4"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE4",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE4_Question",
+        "questionForCaregiver" : "PILVE4_QuestionPar",
+        "shortQuestionVpk" : "Hoelang",
+        "additionalInfo" : "PILVE4_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE5"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE5",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE5_Question",
+        "questionForCaregiver" : "PILVE5_QuestionPar",
+        "shortQuestionVpk" : "Welke week",
+        "additionalInfo" : "PILVE5_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "PILVE5_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE6"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "PILVE5_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE6"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "PILVE5_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE6"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "PILVE5_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE6"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE6",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE6_Question",
+        "questionForCaregiver" : "PILVE6_QuestionPar",
+        "shortQuestionVpk" : "Eerdere pil vergeten in dezelfde strip",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE6A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE7"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE6A",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE6A_Question",
+        "questionForCaregiver" : "PILVE6A_QuestionPar",
+        "shortQuestionVpk" : "Specificatie vergeten pil",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE7"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE7",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE7_Question",
+        "questionForCaregiver" : "PILVE7_QuestionPar",
+        "shortQuestionVpk" : "Regelmatig vergeten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE8"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE8"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE8",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE8_Question",
+        "questionForCaregiver" : "PILVE8_QuestionPar",
+        "shortQuestionVpk" : "Braken en/of diarree",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE9"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE9"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE9",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE9_Question",
+        "questionForCaregiver" : "PILVE9_QuestionPar",
+        "shortQuestionVpk" : "Onbeschermde seks",
+        "additionalInfo" : "PILVE9_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE10"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE10"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE10",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE10_Question",
+        "questionForCaregiver" : "PILVE10_QuestionPar",
+        "shortQuestionVpk" : "Morning-after pil",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PILVE10A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PILVE10A",
+        "questionCategory" : "Pilvergeten",
+        "question" : "PILVE10A_Question",
+        "questionForCaregiver" : "PILVE10A_QuestionPar",
+        "shortQuestionVpk" : "Specificatie morning after pil",
+        "additionalInfo" : "PILVE10A_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG19",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG19_Question",
+        "questionForCaregiver" : "ALG19_QuestionPar",
+        "shortQuestionVpk" : "SOA",
+        "additionalInfo" : "ALG19_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : ">",
+            "value" : "9"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG4"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG19A",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG19A_Question",
+        "questionForCaregiver" : "ALG19A_QuestionPar",
+        "shortQuestionVpk" : "SOA getest",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : ">",
+            "value" : "9"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALG19A_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19B"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALG19A_Answer2",
+            "divergent" : false,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19B"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALG19A_Answer3",
+            "divergent" : false,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG19B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG19B",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG19B_Question",
+        "questionForCaregiver" : "ALG19B_QuestionPar",
+        "shortQuestionVpk" : "SOA uitslag en behandeling",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : ">",
+            "value" : "9"
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ALG4"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALG19B_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALG19B_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALG19B_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALG19B_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALG19B_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALG19B_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG4",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG4_Question",
+        "questionForCaregiver" : "ALG4_QuestionPar",
+        "shortQuestionVpk" : "(mogelijk) zwanger",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          },
+          {
+            "name" : "AGE",
+            "operator" : ">",
+            "value" : "9"
+          },
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "61"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG3B"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG3B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG3B",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG3B_Question",
+        "questionForCaregiver" : "ALG3B_QuestionPar",
+        "shortQuestionVpk" : "Medicatie",
+        "additionalInfo" : "ALG3B_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG3C"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : false,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG5"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG3C",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG3C_Question",
+        "questionForCaregiver" : "ALG3C_QuestionPar",
+        "shortQuestionVpk" : "Specificatie medicatie",
+        "additionalInfo" : "ALG3C_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE_WITH_PHOTO",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG5"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG5",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG5_Question",
+        "questionForCaregiver" : "ALG5_QuestionPar",
+        "shortQuestionVpk" : "Allergieën",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG6"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_Nee",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ADDITIONALQ"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG6",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG6_Question",
+        "questionForCaregiver" : "ALG6_QuestionPar",
+        "shortQuestionVpk" : "Waarvoor en ernst",
+        "additionalInfo" : "ALG6_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ADDITIONALQ"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ADDITIONALQ",
+        "questionCategory" : "Algemeen",
+        "question" : "ADDITIONALQ_Question",
+        "questionForCaregiver" : "ADDITIONALQ_QuestionPar",
+        "shortQuestionVpk" : "Hulpvraag",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG27"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG27",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG27_Question",
+        "questionForCaregiver" : "ALG27_QuestionPar",
+        "shortQuestionVpk" : "Zorgen of vragen",
+        "additionalInfo" : "ALG27_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : false,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "FINISH",
+              "actionText" : "Einde triage"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id" : "ALLER",
+    "name" : "Allergische reactie",
+    "questions" : [
+      {
+        "uniqueQuestionNumber" : "ABCDE1A",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE1A_Question",
+        "questionForCaregiver" : "ABCDE1A_QuestionPar",
+        "shortQuestionVpk" : "Volledig bewustzijn",
+        "additionalInfo" : "ABCDE1A_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : ">=",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE1B"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE1B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE1B",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE1B_Question",
+        "questionForCaregiver" : "ABCDE1B_QuestionPar",
+        "shortQuestionVpk" : "Volledig bewustzijn kind",
+        "additionalInfo" : "ABCDE1B_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE2"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE2"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE2",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE2_Question",
+        "questionForCaregiver" : "ABCDE2_QuestionPar",
+        "shortQuestionVpk" : "A of B klachten",
+        "additionalInfo" : "ABCDE2_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE3"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE2_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE2_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE2_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE2_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE3",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE3_Question",
+        "questionForCaregiver" : "ABCDE3_QuestionPar",
+        "shortQuestionVpk" : "A of B klachten kind",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "12"
+          },
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE4"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE3_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE3_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE3_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE3_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE4",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE4_Question",
+        "questionForCaregiver" : "ABCDE4_QuestionPar",
+        "shortQuestionVpk" : "C Klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ABCDE5"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE4_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE4_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE4_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE4_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE5",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE5_Question",
+        "questionForCaregiver" : "ABCDE5_QuestionPar",
+        "shortQuestionVpk" : "Acute verlamming",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE5_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE6"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE5_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ABCDE6"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE5_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ABCDE6"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ABCDE6",
+        "questionCategory" : "ABCDE",
+        "question" : "ABCDE6_Question",
+        "questionForCaregiver" : "ABCDE6_QuestionPar",
+        "shortQuestionVpk" : "Mate van ziek zijn",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [
+          {
+            "name" : "LABEL",
+            "operator" : "in",
+            "value" : [
+              "meddwf"
+            ]
+          }
+        ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ALLER1"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ABCDE6_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ABCDE6_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ABCDE6_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ABCDE6_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER1",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER1_Question",
+        "questionForCaregiver" : "ALLER1_QuestionPar",
+        "shortQuestionVpk" : "Urgente klachten",
+        "additionalInfo" : "ALLER1_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "Red flag",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [ ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ALG7"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER1_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER1_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER1_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALLER1_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALLER1_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALLER1_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALLER1_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALLER1_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "ALLER1_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "ALLER1_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 11,
+            "answerText" : "ALLER1_Answer11",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG7",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG7_Question",
+        "questionForCaregiver" : "ALG7_QuestionPar",
+        "shortQuestionVpk" : "(Vermoedelijk) koorts",
+        "additionalInfo" : "ALG7_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALG7_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG7a"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALG7_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG7a",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG7a_Question",
+        "questionForCaregiver" : "ALG7a_QuestionPar",
+        "shortQuestionVpk" : "Temperatuur",
+        "additionalInfo" : "ALG7a_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SLIDER",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALG7a_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 2,
+              "urgencyName" : "U2",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALG7a_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALG7a_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALG7a_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALG7a_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALG7a_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALG7a_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALG7a_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "ALG7a_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "ALG7a_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 2,
+              "urgencyName" : "U2",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 11,
+            "answerText" : "ALG7a_Answer11",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 2,
+              "urgencyName" : "U2",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 12,
+            "answerText" : "ALG7a_Answer12",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 2,
+              "urgencyName" : "U2",
+              "actionText" : "ALLER2"
+            }
+          },
+          {
+            "id" : 13,
+            "answerText" : "ALG7a_Answer13",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 2,
+              "urgencyName" : "U2",
+              "actionText" : "ALLER2"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER2",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER2_Question",
+        "questionForCaregiver" : "ALLER2_QuestionPar",
+        "shortQuestionVpk" : "Klachten bij allergie",
+        "additionalInfo" : "ALLER2_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ALLER3"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER2_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PIJ1"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER2_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "PIJ1"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER2_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2A"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALLER2_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2A"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALLER2_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2A"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALLER2_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALLER2_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALLER2_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "ALLER2_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "ALLER2_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2B"
+            }
+          },
+          {
+            "id" : 11,
+            "answerText" : "ALLER2_Answer11",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER2A"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER2A",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER2A_Question",
+        "questionForCaregiver" : "ALLER2A_QuestionPar",
+        "shortQuestionVpk" : "Huiduitslag",
+        "additionalInfo" : "ALLER2A_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE_WITH_PHOTO",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "PIJ1",
+        "questionCategory" : "PIJN",
+        "question" : "PIJ1_Question",
+        "questionForCaregiver" : "PIJ1_QuestionPar",
+        "shortQuestionVpk" : "Pijn 0-10",
+        "additionalInfo" : "PIJ1_ExtraInfo",
+        "pictureWithQuestion" : "https://mi-umbraco-prd.azurewebsites.net/media/r3xjpuis/pij1.png",
+        "urgency" : "score 9 of 10",
+        "questionType" : "SLIDER",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 0,
+            "answerText" : "PIJ1_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 1,
+            "answerText" : "PIJ1_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "PIJ1_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "PIJ1_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "PIJ1_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "PIJ1_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "PIJ1_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "PIJ1_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "PIJ1_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "PIJ1_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ALLER2B"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "PIJ1_Answer11",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "ASK_FOR_CHAT",
+              "urgency" : 1,
+              "urgencyName" : "U1 - U2",
+              "actionText" : "ALLER2B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER2B",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER2B_Question",
+        "questionForCaregiver" : "ALLER2B_QuestionPar",
+        "shortQuestionVpk" : "Andere allergie klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER3",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER3_Question",
+        "questionForCaregiver" : "ALLER3_QuestionPar",
+        "shortQuestionVpk" : "Oorzaak allergische reactie",
+        "additionalInfo" : "ALLER3_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "ALG13"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER3_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER3_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER3A"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER3_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER6"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALLER3_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALLER3_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALLER3_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALLER3_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALLER3_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "ALLER3_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "ALLER3_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 11,
+            "answerText" : "ALLER3_Answer11",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 12,
+            "answerText" : "ALLER3_Answer12",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER3B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER3A",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER3A_Question",
+        "questionForCaregiver" : "ALLER3A_QuestionPar",
+        "shortQuestionVpk" : "Voedsel",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "RETURN"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER3A_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER3A_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER3A_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALLER3A_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALLER3A_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALLER3A_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALLER3A_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALLER3A_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 9,
+            "answerText" : "ALLER3A_Answer9",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          },
+          {
+            "id" : 10,
+            "answerText" : "ALLER3A_Answer10",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER3B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER3B",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER3B_Question",
+        "questionForCaregiver" : "ALLER3B_QuestionPar",
+        "shortQuestionVpk" : "Specificatie aanraking oorzaak",
+        "additionalInfo" : "ALLER3B_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER4",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER4_Question",
+        "questionForCaregiver" : "ALLER4_QuestionPar",
+        "shortQuestionVpk" : "Insectenbeet",
+        "additionalInfo" : "ALLER4_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "MULTI_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : {
+          "actionType" : "GO_TO_QUESTION",
+          "urgency" : null,
+          "urgencyName" : null,
+          "actionText" : "RETURN"
+        },
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER4_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER4_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER4_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALLER4_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALLER4_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALLER4_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 7,
+            "answerText" : "ALLER4_Answer7",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4B"
+            }
+          },
+          {
+            "id" : 8,
+            "answerText" : "ALLER4_Answer8",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER4A",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER4A_Question",
+        "questionForCaregiver" : "ALLER4A_QuestionPar",
+        "shortQuestionVpk" : "Duur teek",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALLER4A_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALLER4A_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALLER4A_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER4B",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER4B_Question",
+        "questionForCaregiver" : "ALLER4B_QuestionPar",
+        "shortQuestionVpk" : "Ander insect",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER4C"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER4C",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER4C_Question",
+        "questionForCaregiver" : "ALLER4C_QuestionPar",
+        "shortQuestionVpk" : "Lokatie steek",
+        "additionalInfo" : "ALLER4C_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER5",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER5_Question",
+        "questionForCaregiver" : "ALLER5_QuestionPar",
+        "shortQuestionVpk" : "Aspect steekplek",
+        "additionalInfo" : "ALLER5_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE_WITH_PHOTO",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG13"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER6",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER6_Question",
+        "questionForCaregiver" : "ALLER6_QuestionPar",
+        "shortQuestionVpk" : "Medicatie allergische reactie",
+        "additionalInfo" : "ALLER6_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "RETURN"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG13",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG13_Question",
+        "questionForCaregiver" : "ALG13_QuestionPar",
+        "shortQuestionVpk" : "Sinds wanneer",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "SINGLE_SELECTION",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "ALG13_Answer1",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "ALG13_Answer2",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          },
+          {
+            "id" : 3,
+            "answerText" : "ALG13_Answer3",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          },
+          {
+            "id" : 4,
+            "answerText" : "ALG13_Answer4",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          },
+          {
+            "id" : 5,
+            "answerText" : "ALG13_Answer5",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          },
+          {
+            "id" : 6,
+            "answerText" : "ALG13_Answer6",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG13A"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG13A",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG13A_Question",
+        "questionForCaregiver" : "ALG13A_QuestionPar",
+        "shortQuestionVpk" : "Specifieke duur",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER7"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER7",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER7_Question",
+        "questionForCaregiver" : "ALLER7_QuestionPar",
+        "shortQuestionVpk" : "Window periode",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER8"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER8",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER8_Question",
+        "questionForCaregiver" : "ALLER8_QuestionPar",
+        "shortQuestionVpk" : "Relatie allergeen - klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG14"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG14"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG14",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG14_Question",
+        "questionForCaregiver" : "ALG14_QuestionPar",
+        "shortQuestionVpk" : "Bijkomende klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : false,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG14A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER9"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG14A",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG14A_Question",
+        "questionForCaregiver" : "ALG14A_QuestionPar",
+        "shortQuestionVpk" : "Specificatie bijkomende klachten",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : false,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER9"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER9",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER9_Question",
+        "questionForCaregiver" : "ALLER9_QuestionPar",
+        "shortQuestionVpk" : "Triggers",
+        "additionalInfo" : "ALLER9_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER10"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER10",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER10_Question",
+        "questionForCaregiver" : "ALLER10_QuestionPar",
+        "shortQuestionVpk" : "VG Allergie",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALLER10A"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG15"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALLER10A",
+        "questionCategory" : "Allergische reactie",
+        "question" : "ALLER10A_Question",
+        "questionForCaregiver" : "ALLER10A_QuestionPar",
+        "shortQuestionVpk" : "Specificatie VG allergie",
+        "additionalInfo" : "ALLER10A_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG15"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG15",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG15_Question",
+        "questionForCaregiver" : "ALG15_QuestionPar",
+        "shortQuestionVpk" : "Zelfhulp",
+        "additionalInfo" : "ALG15_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG3B"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG3B",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG3B_Question",
+        "questionForCaregiver" : "ALG3B_QuestionPar",
+        "shortQuestionVpk" : "Medicatie",
+        "additionalInfo" : "ALG3B_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG3C"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG4"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG3C",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG3C_Question",
+        "questionForCaregiver" : "ALG3C_QuestionPar",
+        "shortQuestionVpk" : "Specificatie medicatie",
+        "additionalInfo" : "ALG3C_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE_WITH_PHOTO",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG4"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG4",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG4_Question",
+        "questionForCaregiver" : "ALG4_QuestionPar",
+        "shortQuestionVpk" : "(mogelijk) zwanger",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "BOOLEAN",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [
+          {
+            "name" : "SEX",
+            "operator" : "=",
+            "value" : "female"
+          },
+          {
+            "name" : "AGE",
+            "operator" : ">",
+            "value" : "9"
+          },
+          {
+            "name" : "AGE",
+            "operator" : "<",
+            "value" : "61"
+          }
+        ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "GEN_ANS_JA",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ADDITIONALQ"
+            }
+          },
+          {
+            "id" : 2,
+            "answerText" : "GEN_ANS_NEE",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ADDITIONALQ"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ADDITIONALQ",
+        "questionCategory" : "Algemeen",
+        "question" : "ADDITIONALQ_Question",
+        "questionForCaregiver" : "ADDITIONALQ_QuestionPar",
+        "shortQuestionVpk" : "Hulpvraag",
+        "additionalInfo" : "",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : true,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "GO_TO_QUESTION",
+              "actionText" : "ALG27"
+            }
+          }
+        ]
+      },
+      {
+        "uniqueQuestionNumber" : "ALG27",
+        "questionCategory" : "Algemeen",
+        "question" : "ALG27_Question",
+        "questionForCaregiver" : "ALG27_QuestionPar",
+        "shortQuestionVpk" : "Zorgen of vragen",
+        "additionalInfo" : "ALG27_ExtraInfo",
+        "pictureWithQuestion" : "",
+        "urgency" : "",
+        "questionType" : "DESCRIPTIVE",
+        "questionRequired" : false,
+        "dontKnow" : true,
+        "conditions" : [ ],
+        "nextMainAction" : null,
+        "answer" : [
+          {
+            "id" : 1,
+            "answerText" : "",
+            "divergent" : true,
+            "action" : {
+              "actionType" : "FINISH",
+              "actionText" : "Einde triage"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]}
